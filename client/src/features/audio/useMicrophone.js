@@ -15,7 +15,8 @@ export function useMicrophone(onAudioChunk) {
 
       //create a media recoder forr the stream
       const recorder = new window.MediaRecorder(stream, {
-        mimeType: "audio/webm",
+        mimeType: "audio/webm;codecs=opus",
+        audioBitsPerSecond: 16000 * 16,
       });
       mediaRecorderRef.current = recorder;
 

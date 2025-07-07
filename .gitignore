@@ -4,6 +4,7 @@
 /server/coverage
 /server/logs
 /server/temp
+/server/.env
 
 /client/node_modules
 /client/dist
@@ -11,3 +12,4 @@
 /client/coverage
 /client/logs
 /client/temp
+/client/.env
